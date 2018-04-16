@@ -31,18 +31,18 @@ export class DateComponent extends React.Component {
         const parsedURL = queryString.parseUrl(location.href);
         this.Cid = parsedURL.query.Cid;
         this.Sid = parsedURL.query.Sid;
-        this.Cid = this.Cid.substr(0,15);
+        this.Cid = this.Cid.substr(0, 15);
         console.log(this.Sid);
         let scheduleApi = `https://trailrecruitment01-dev-ed.my.salesforce.com/services/apexrest/CandidateScheduleRestHandler/${this.Cid}`;
         var that = this;
         var xhttp = new XMLHttpRequest();
+        this.Sid = this.Sid.split('#/')[0];
         var token = this.Sid;
-        var jsonObject = void 0;
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 that.setState({
                     candidateSchedule: JSON.parse(this.responseText)
-                    
+
                 });
                 console.log(this.responseText);
                 that.checkSchedule();
@@ -53,7 +53,7 @@ export class DateComponent extends React.Component {
         xhttp.setRequestHeader('Access-Control-Allow-Origin', 'https://trailrecruitment01-dev-ed--c.ap5.visual.force.com');
         xhttp.send();
     }
-    
+
 
     checkSchedule() {
         let schedule = this.state.candidateSchedule.Date_And_Time__c;
@@ -115,7 +115,7 @@ export class DateComponent extends React.Component {
 
     render() {
         if (this.state.counter == 1) {
-            return (<FetchQuestion Cid={this.Cid} Sid={this.Sid}/>)
+            return (<FetchQuestion Cid={this.Cid} Sid={this.Sid} />)
         }
         if (this.state.dateFlag == 0) {
             return (<div align="center">
