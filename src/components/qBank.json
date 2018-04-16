@@ -1,0 +1,224 @@
+{
+  "question":[
+     {
+        "id":"1",
+        "question":"A vessel is filled with liquid, 3 parts of which are water and 5 parts syrup. How much of the mixture must be drawn off and replaced with water so that the mixture may be half water and half syrup?",
+        "options":{
+           "option1":"1/3",
+           "option2":"1/4",
+           "option3":"1/5",
+           "option4":"1/7"
+        },
+        "answer":"1/5"
+     },
+     {
+        "id":"2",
+        "question":"Tea worth Rs. 126 per kg and Rs. 135 per kg are mixed with a third variety in the ratio 1 : 1 : 2. If the mixture is worth Rs. 153 per kg, the price of the third variety per kg will be:",
+        "options":{
+           "option1":"Rs. 169.50",
+           "option2":"Rs. 170",
+           "option3":"Rs. 175.50",
+           "option4":"Rs. 180"
+        },
+        "answer":"Rs. 175.50"
+     },
+     {
+        "id":"3",
+        "question":"Which one of the following is not a prime number?",
+        "options":{
+           "option1":"31",
+           "option2":"61",
+           "option3":"71",
+           "option4":"91"
+        },
+        "answer":"91"
+     },
+     {
+        "id":"4",
+        "question":"What least number must be added to 1056, so that the sum is completely divisible by 23 ?",
+        "options":{
+           "option1":"2",
+           "option2":"3",
+           "option3":"18",
+           "option4":"None of these"
+        },
+        "answer":"None of these"
+     },
+     {
+        "id":"5",
+        "question":"A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. The sum is:",
+        "options":{
+           "option1":"Rs. 650",
+           "option2":"Rs. 690",
+           "option3":"Rs. 698",
+           "option4":"Rs. 700"
+        },
+        "answer":"Rs. 698"
+     },
+     {
+        "id":"6",
+        "question":"A sum fetched a total simple interest of Rs. 4016.25 at the rate of 9 p.c.p.a. in 5 years. What is the sum?",
+        "options":{
+           "option1":"Rs. 4462.50",
+           "option2":"Rs. 8032.50",
+           "option3":"Rs. 8900",
+           "option4":"Rs. 8925"
+        },
+        "answer":"Rs. 8925"
+     },
+     {
+        "id":"7",
+        "question":"The sum of ages of 5 children born at the intervals of 3 years each is 50 years. What is the age of the youngest child?",
+        "options":{
+           "option1":"4 years",
+           "option2":"8 years",
+           "option3":"10 years",
+           "option4":"None of these"
+        },
+        "answer":"4 years"
+     },
+     {
+        "id":"8",
+        "question":"A father said to his son, 'I was as old as you are at the present at the time of your birth'. If the father's age is 38 years now, the son's age five years back was:",
+        "options":{
+           "option1":"14 years",
+           "option2":"19 years",
+           "option3":"33 years",
+           "option4":"38 years"
+        },
+        "answer":"14 years"
+     },
+     {
+        "id":"9",
+        "question":"An accurate clock shows 8 o'clock in the morning. Through how may degrees will the hour hand rotate when the clock shows 2 o'clock in the afternoon?",
+        "options":{
+           "option1":"144º",
+           "option2":"150º",
+           "option3":"168º",
+           "option4":"180º"
+        },
+        "answer":"180º"
+     },
+     {
+        "id":"10",
+        "question":"The angle between the minute hand and the hour hand of a clock when the time is 4.20, is:",
+        "options":{
+           "option1":"0º",
+           "option2":"10º",
+           "option3":"5º",
+           "option4":"20º"
+        },
+        "answer":"10º"
+     },
+     {
+        "id":"11",
+        "question":"Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+        "options":{
+           "option1":"7",
+           "option2":"10",
+           "option3":"12",
+           "option4":"13"
+        },
+        "answer":"10"
+     },
+     {
+        "id":"12",
+        "question":"Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?",
+        "options":{
+           "option1":"12",
+           "option2":"14",
+           "option3":"27",
+           "option4":"53"
+        },
+        "answer":"14"
+     },
+     {
+        "id":"13",
+        "question":"Senators from urban areas are very concerned about assuring that there will be funding for a new international airport. Senators from rural areas refuse to fund anything until money for agricultural subsidies is appropriated. If the legislature funds these two programs, on which of the following could they spend the rest of the money?",
+        "options":{
+           "option1":"the school music program and national radio",
+           "option2":"hurricane preparedness",
+           "option3":"harbor improvements and the school music program",
+           "option4":"small business loan program"
+        },
+        "answer":"the school music program and national radio"
+     },
+     {
+        "id":"14",
+        "question":"If the legislature decides to fund the agricultural subsidy program, national radio, and the small business loan program, the only other single program that can be funded is",
+        "options":{
+           "option1":"hurricane preparedness.",
+           "option2":"harbor improvements.",
+           "option3":"school music program.",
+           "option4":"senate office building remodeling."
+        },
+        "answer":"senate office building remodeling."
+     },
+     {
+        "id":"15",
+        "question":"Tanya is older than Eric.Cliff is older than Tanya.Eric is older than Cliff.If the first two statements are true, the third statement is",
+        "options":{
+           "option1":"true",
+           "option2":"false",
+           "option3":"uncertain",
+           "option4":"None of the Above"
+        },
+        "answer":"false"
+     },
+     {
+        "id":"16",
+        "question":"All the offices on the 9th floor have wall-to-wall carpeting. No wall-to-wall carpeting is pink.None of the offices on the 9th floor has pink wall-to-wall carpeting.If the first two statements are true, the third statement is",
+        "options":{
+           "option1":"true",
+           "option2":"false",
+           "option3":"uncertain",
+           "option4":"None of the Above"
+        },
+        "answer":"true"
+     },
+     {
+        "id":"17",
+        "question":"Which word does NOT belong with the others?",
+        "options":{
+           "option1":"parsley",
+           "option2":"basil",
+           "option3":"dill",
+           "option4":"mayonnaise"
+        },
+        "answer":"mayonnaise"
+     },
+     {
+        "id":"18",
+        "question":"Which word does NOT belong with the others?",
+        "options":{
+           "option1":"inch",
+           "option2":"ounce",
+           "option3":"centimeter",
+           "option4":"yard"
+        },
+        "answer":"ounce"
+     },
+     {
+        "id":"19",
+        "question":"SCD, TEF, UGH, ____, WKL",
+        "options":{
+           "option1":"CMN",
+           "option2":"UJI",
+           "option3":"VIJ",
+           "option4":"IJT"
+        },
+        "answer":"VIJ"
+     },
+     {
+        "id":"20",
+        "question":"FAG, GAF, HAI, IAH, ____ ",
+        "options":{
+           "option1":"JAK",
+           "option2":"HAL",
+           "option3":"HAK",
+           "option4":"JAI"
+        },
+        "answer":"JAK"
+     }
+  ]
+}
