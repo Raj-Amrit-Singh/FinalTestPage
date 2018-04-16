@@ -6,7 +6,7 @@ import { FetchQuestion } from './FetchQuestion.js'
 import { Instructions } from './Instructions'
 import queryString, { parseUrl } from 'query-string'
 
-class datePicker extends React.Component {
+export class DateComponent extends React.Component {
     constructor(props) {
         super(props);
         this.canddate = null;
@@ -15,7 +15,7 @@ class datePicker extends React.Component {
         this.state = {
             counter: 0,
             candidateSchedule: {},
-            dateFlag: null,
+            dateFlag: 3,
         };
         //this.state.dateFlag = null;
         this.startTest = this.startTest.bind(this);
@@ -24,6 +24,7 @@ class datePicker extends React.Component {
         this.checkSchedule = this.checkSchedule.bind(this);
         this.checkDate = this.checkDate.bind(this);
         this.checkTime = this.checkTime.bind(this);
+        console.log('hre');
     }
 
     fetchUrlParams() {
@@ -41,7 +42,9 @@ class datePicker extends React.Component {
             if (this.readyState == 4 && this.status == 200) {
                 that.setState({
                     candidateSchedule: JSON.parse(this.responseText)
+                    
                 });
+                console.log(this.responseText);
                 that.checkSchedule();
             }
         };
@@ -87,7 +90,7 @@ class datePicker extends React.Component {
         let candTime = Math.floor(candDate.getTime() / 1000);
         let timeDiff = Math.abs(candTime - currentTime);
         timeDiff = timeDiff / 60;
-        if (timeDiff > 60) {
+        if (timeDiff > 1200) {
             this.setState({
                 dateFlag: 2,
             })
@@ -138,5 +141,3 @@ class datePicker extends React.Component {
         }
     }
 };
-
-export default datePicker

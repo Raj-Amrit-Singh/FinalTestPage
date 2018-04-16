@@ -1,10 +1,6 @@
+
 import React, { Component } from 'react';
 import { myStyle } from '../css/Card'
-import { parse } from 'qs';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-
-
 export class PresentQuestions extends React.Component {
   constructor(props) {
     super(props);
@@ -68,6 +64,14 @@ export class PresentQuestions extends React.Component {
 
   onButtonChange(value, id, answer) {
     let tempArray = this.state.currentButton;
+    let group = Math.floor(value / 4);
+    let removeNumber = tempArray.find((element, index) => {
+      return Math.floor(element / 4) == group;
+    });
+    let index = tempArray.indexOf(removeNumber);
+    if (index > -1) {
+      tempArray.splice(index, 1);
+    }
     tempArray.push(value);
     this.setState((prevState) => ({
       currentButton: tempArray,
@@ -77,7 +81,6 @@ export class PresentQuestions extends React.Component {
 
   componentWillMount() {
     this.createButtons();
-    /*  this.fetchURL(); */
   }
 
   toCheck(value) {
@@ -96,7 +99,6 @@ export class PresentQuestions extends React.Component {
     let currentStatus = this.qBank[tempState];
     return (
       <div className="row margin-40 " >
-
         <div className="col-sm-12 col-sm-offset-1 text-absolute" style={{
           top: "-16px"
         }}>
@@ -109,19 +111,19 @@ export class PresentQuestions extends React.Component {
               <div className="radio">
                 <table>
                   <tr>
-                    <td><label><input type="radio" key={tempState} style={{ position: "inherit" }} name={tempState} value={myValue + 1} checked={this.toCheck(myValue + 1)} onChange={() => this.onButtonChange(myValue + 1, currentStatus.Id, currentStatus.Options__c.option1)} />
+                    <td><label><input type="radio" style={{ position: "inherit" }} name={tempState} value={myValue} checked={this.toCheck(myValue)} onChange={() => this.onButtonChange(myValue, currentStatus.Id, currentStatus.Options__c.option1)} />
                       &nbsp; {currentStatus.Options__c.option1}
                     </label></td>
 
                     <td><label style={{ marginLeft: "387px" }}>
-                      <input type="radio" key={tempState = 1} style={{ position: "inherit" }} name={tempState} value={myValue + 2} checked={this.toCheck(myValue + 2)} onChange={() => this.onButtonChange(myValue + 2, currentStatus.Id, currentStatus.Options__c.option2)} />
+                      <input type="radio" style={{ position: "inherit" }} name={tempState} value={myValue + 1} checked={this.toCheck(myValue + 1)} onChange={() => this.onButtonChange(myValue + 1, currentStatus.Id, currentStatus.Options__c.option2)} />
                       &nbsp; {currentStatus.Options__c.option2}
                     </label></td></tr>
-                  <tr> <td><label><input type="radio" key={tempState + 2} style={{ position: "inherit" }} name={tempState} value={myValue + 3} checked={this.toCheck(myValue + 3)} onChange={() => this.onButtonChange(myValue + 3, currentStatus.Id, currentStatus.Options__c.option3)} />
+                  <tr> <td><label><input type="radio" style={{ position: "inherit" }} name={tempState} value={myValue + 2} checked={this.toCheck(myValue + 2)} onChange={() => this.onButtonChange(myValue + 2, currentStatus.Id, currentStatus.Options__c.option3)} />
                     &nbsp; {currentStatus.Options__c.option3}
                   </label></td>
                     <td><label style={{ marginLeft: "387px" }}>
-                      <input type="radio" key={tempState + 3} name={tempState} style={{ position: "inherit" }} value={myValue + 4} checked={this.toCheck(myValue + 4)} onChange={() => this.onButtonChange(myValue + 4, currentStatus.Id, currentStatus.Options__c.option4)} />
+                      <input type="radio" name={tempState} style={{ position: "inherit" }} value={myValue + 3} checked={this.toCheck(myValue + 3)} onChange={() => this.onButtonChange(myValue + 3, currentStatus.Id, currentStatus.Options__c.option4)} />
                       &nbsp; {currentStatus.Options__c.option4}
                     </label></td></tr>
                 </table>
@@ -146,4 +148,3 @@ export class PresentQuestions extends React.Component {
     );
   }
 }
-//export default QuestionPage
